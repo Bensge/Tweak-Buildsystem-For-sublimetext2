@@ -1,5 +1,11 @@
 {
 	"cmd": ["make package install"],
 	"path" : "/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin",
-	"shell" : true
+	"shell" : true,
+	"env":
+	{
+	    "THEOS_DEVICE_IP":"127.0.0.1",
+	    "THEOS_DEVICE_PORT":"2222",
+	    "GO_EASY_ON_ME":"1"
+	}
 }
